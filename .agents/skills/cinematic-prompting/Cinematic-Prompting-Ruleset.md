@@ -10,6 +10,7 @@ Every video shot must begin with a static version of that exact shot.
 
 - Create and approve a start image before writing the final video prompt.
 - Create a separate end image whenever the end composition, pose, product framing, transformation, reveal, focus destination, or transition must land precisely.
+- When the end image will use the generated start image as a Magnific reference, approve the start image and obtain its exact Magnific node name before writing the copy-ready end-image prompt. Do not prewrite the end prompt with a guessed or placeholder node.
 - Use the approved stills as visual truth for identity, composition, production design, lighting, palette, texture, and spatial relationships.
 - Do not bypass this stage because a video model supports text-to-video.
 - If the user explicitly changes this rule for a particular experiment, record the exception in that shot's notes.
@@ -61,12 +62,12 @@ Every video shot must begin with a static version of that exact shot.
 ## 7. Mandatory Prompt Authorization Gate
 
 - Copy-ready image and video prompt drafting is locked by default.
-- Before the first static prompt for a shot, all material fields must be decided or surfaced as explicit defaults: purpose, subject/action, shot size, composition, camera position/height/angle, lens and perspective behavior, aspect ratio, production design, lighting, palette and assigned brand-color use, lived-in occupancy/background activity or an approved emptiness exception, depth of field, focus, start state, end state and end-image decision, continuity, references, target model/mode, and generation constraints.
+- Before the first static prompt for a shot, all material fields must be decided or surfaced as explicit defaults: purpose, subject/action, shot size, composition, camera position/height/angle, lens and perspective behavior, aspect ratio, production design, lighting, palette and assigned brand-color use, lived-in occupancy/background activity or an approved emptiness exception, depth of field, focus, start state, end state and end-image decision, continuity, reference-use decisions and bindings, target model/mode, and generation constraints.
 - For video shots, also decide support/stability, three-dimensional path, orientation, lens operation, framing evolution, focus choreography, timing/easing, subject/environmental motion, landing frame, and continuity risks.
 - Present these decisions as a concise Prompt Readiness Summary. Clearly label any remaining assumption, recommended default, unresolved conflict, or high-risk instruction.
 - Ask the user to approve the specification and authorize prompt drafting. Do not infer authorization from earlier approval of mood, research, a narrative route, a shot list, or one camera option.
 - An unambiguous affirmative response is sufficient; do not require a password-like phrase.
-- Authorization may cover one shot, a named batch, all static prompts, or all video prompts. Do not extend it beyond the stated scope.
+- Authorization may cover one shot, a named batch, all ready static prompts, or all ready video prompts. Do not extend it beyond the stated scope or across prompts whose selected reference bindings do not yet exist.
 - Static-prompt authorization does not automatically authorize final video prompts. After the actual start/end images are approved, reconfirm affected motion decisions and obtain video-prompt authorization.
 - A direct request to revise an existing prompt authorizes only that requested revision, provided it does not introduce unresolved conflicts with locked decisions.
 
@@ -125,6 +126,12 @@ Do not unnecessarily redescribe or destabilize visual information already locked
 ## 12. References must have assigned jobs
 
 - Label what each reference controls: identity, wardrobe, product, location, composition, pose, lighting, palette, texture, camera movement, performance, or sound.
+- Before prompt authorization, explicitly check whether a usable reference image is available for the shot or batch. Offer three paths: use it; leave it unused; or review it before deciding.
+- If the user chooses to use an image through a Magnific prompt reference, obtain the exact node name shown in Magnific before writing the copy-ready prompt. Do not infer a node name from the filename, upload title, content, or earlier project label.
+- Preserve the supplied node name exactly, including spelling, capitalization, spaces, punctuation, and numbering, and use that confirmed name in the corresponding `@` mention or interface-recognized node token.
+- For multiple references, record one exact node name, assigned role, and priority per image. Resolve conflicting jobs before prompting.
+- If an image has not yet been uploaded or its node has not been named, keep the binding unresolved and prompt drafting locked for that shot unless the user explicitly chooses to proceed without the reference.
+- If Magnific binds a start image, end image, or other reference through a dedicated setting rather than an `@` prompt mention, record the exact node in the settings card and do not invent redundant prompt syntax.
 - Do not attach a pile of references without explaining their relationships or priority.
 - When references conflict, resolve the conflict before prompting.
 - Use accepted start and end images ahead of verbal re-description whenever exact framing or continuity matters.

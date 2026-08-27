@@ -37,6 +37,8 @@
 - Start state:
 - End state:
 - References and assigned roles:
+- Reference-image decision: use / unused / reviewed and rejected / none available
+- Exact Magnific node names and binding methods for selected references:
 
 ## Prompt Authorization record
 
@@ -61,6 +63,7 @@
 
 - Required:
 - Reason:
+- Copy-ready now or deferred pending exact node name:
 
 ## End-image prompt
 
@@ -72,7 +75,7 @@
 
 - Model/mode:
 - Aspect ratio/resolution:
-- Reference assignments:
+- Reference assignments, exact node names, and `@`/dedicated-control method:
 - Relevant controls:
 - Prompt enhancement:
 
@@ -117,7 +120,7 @@
 ## Video Magnific settings card
 
 - Model/mode:
-- Start/end references:
+- Start/end/additional references, exact node names, and binding methods:
 - Duration/aspect ratio/resolution:
 - Audio controls:
 - Relevant controls:

@@ -14,6 +14,7 @@ It helps you:
 - decide the mood and style before prompt writing;
 - ask whether exact brand hex colors or a supplied palette should be integrated, and define where they belong;
 - plan each shot's viewpoint, composition, camera movement, and focus;
+- decide whether available reference images should be used, ignored, or reviewed first, and bind selected Magnific references to their exact node names;
 - keep public, commercial, travel, hospitality, workplace, and social environments plausibly lived-in unless you intentionally approve an empty or private scenario;
 - create and approve static start images before generating video;
 - create end images when the final framing or action needs control;
@@ -113,9 +114,22 @@ You do not need to know the technical names. For example, you can say:
 
 The assistant should determine whether you mean a physical push-in, optical zoom, true dolly zoom, lateral move, or a combination—and explain the result before prompting.
 
-### 8. Authorize the static prompts
+### 8. Choose reference images and confirm Magnific node names
 
-After all relevant shot decisions are complete, the assistant must show you a **Prompt Readiness Summary**. This should consolidate the shot purpose, subject/action, composition, camera position and angle, lens behavior, production design, lighting, palette and approved brand-color use, plausible occupancy and secondary background activity, depth of field, focus, start/end state, references, model strategy, and important risks.
+Before the assistant prepares the Prompt Readiness Summary, it should ask whether a useful reference image is available for the shot. You can choose to:
+
+1. use it as a reference;
+2. leave it unused;
+3. ask the assistant to review it before deciding;
+4. continue without a reference if none is available.
+
+If you choose to use an image in Magnific, tell the assistant the exact name of that image's node as displayed in Magnific. Copy the name rather than paraphrasing it. The assistant must preserve that spelling, capitalization, spacing, punctuation, and numbering in any `@` mention or dedicated reference assignment.
+
+If the image is not in Magnific yet, upload it and obtain the node name before prompt drafting—or choose to continue without it. The assistant should never guess from the filename or put `@image1`, `@reference`, or another placeholder into a production prompt.
+
+### 9. Authorize the static prompts
+
+After all relevant shot decisions are complete, the assistant must show you a **Prompt Readiness Summary**. This should consolidate the shot purpose, subject/action, composition, camera position and angle, lens behavior, production design, lighting, palette and approved brand-color use, plausible occupancy and secondary background activity, depth of field, focus, start/end state, reference-use decisions, exact Magnific node bindings for selected images, model strategy, and important risks.
 
 It will then ask whether you approve that specification and authorize static prompt drafting. The prompts must not appear in the same message as the authorization request.
 
@@ -123,13 +137,15 @@ You can reply naturally: `Approved`, `Looks good, proceed`, or `Write the static
 
 If you are not ready, the assistant should clearly offer alternatives such as changing a field, authorizing only selected shots, holding the prompts, or returning to an earlier decision.
 
-### 9. Create the static prompts
+### 10. Create the static prompts
 
 The assistant writes a start-image prompt for each shot. It will also recommend an end image when the final composition, pose, reveal, transformation, or focus destination needs to be controlled.
 
+When an end image should reference the generated start image, this happens in two passes: generate and approve the start image, give the assistant its exact Magnific node name, then authorize the end-image prompt. This prevents the assistant from guessing a node that does not exist yet.
+
 Copy the prompt and settings into Magnific. Generate variations, then select or repair the strongest frame.
 
-### 10. Return the approved images
+### 11. Return the approved images
 
 Show the approved start image—and end image when used—to the assistant. It should check composition, continuity, brand/product fidelity, lighting, materials, hands, typography, reflections, and other common problems.
 
@@ -142,17 +158,17 @@ If the current AI platform has an active Magnific connection with read-only hist
 
 It should not search your history until you choose that option. Read-only retrieval and critique do not generate or transform media and do not normally consume Magnific generation credits. Any generation, edit, variation, upscale, or video operation is a separate action: the assistant must explain the known credit consequence and obtain your explicit approval first. If no connection is available, upload the files manually; the rest of the workflow still works.
 
-### 11. Authorize the video prompt
+### 12. Authorize the video prompt
 
 After approving the actual start/end images, review the final motion readiness summary. If those images changed the geometry, focus, or movement endpoints, resolve that first. Authorize the final video prompt only when the camera choreography still works.
 
-### 12. Create the video prompt
+### 13. Create the video prompt
 
 Only after the static images are approved should the assistant write the final video prompt. Each generated file should contain one continuous camera shot without baked-in cuts to other setups.
 
 The prompt should clearly describe what the camera, subject, environment, and focus are doing over time.
 
-### 13. Edit in post-production
+### 14. Edit in post-production
 
 Generate separate clips for each shot. Assemble, trim, cut, transition, grade, and mix them in your editing software.
 
@@ -187,6 +203,7 @@ cinematic-prompting/
 │   ├── Shot-Research-and-Shotlist-Design.md
 │   ├── Camera-Movement-Language.md
 │   ├── Model-Adapters.md
+│   ├── Magnific-Reference-Node-Bindings.md
 │   └── Magnific-MCP-Validation.md
 ├── templates/
 │   ├── Project-Brief-Template.md
@@ -209,6 +226,7 @@ cinematic-prompting/
 - **Prompt:** Instructions given to an image or video generation model.
 - **Model:** The specific image/video system selected inside Magnific.
 - **Reference image:** An uploaded image used to control identity, product, style, lighting, composition, or another visual property.
+- **Magnific node name:** The exact name shown for an image node in Magnific. The assistant uses this name when compiling an `@` mention or recording a dedicated reference assignment.
 - **Shot:** One uninterrupted camera take between edits.
 - **Clip:** One generated video file. In this workflow, one clip normally contains one continuous shot.
 - **Start image/frame:** The approved static image used as the beginning of a video generation.
@@ -268,6 +286,10 @@ Confirm that the prompt says `one continuous camera shot`, `no cuts`, and define
 ### Character or product details change
 
 Use stronger reference images, assign each reference a specific job, simplify conflicting instructions, and repair the static frame before video generation.
+
+### The prompt points to the wrong Magnific image
+
+Check the exact node name in Magnific and copy it to the assistant. Do not provide only the upload filename. Ask the assistant to update every affected `@` mention and settings-card assignment using the confirmed node name from `references/Magnific-Reference-Node-Bindings.md`.
 
 ### The assistant cannot see my Magnific history
 

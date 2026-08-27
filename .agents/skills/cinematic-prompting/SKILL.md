@@ -1,6 +1,6 @@
 ---
 name: cinematic-prompting
-description: Research, develop, and validate continuity-controlled cinematic shot lists, image prompts, and single-shot video prompt packages from topics, briefs, scripts, partial ideas, visual references, or existing outputs. Use for still-first Magnific workflows targeting models such as Seedream, Nano Banana, Seedance, or Kling; includes creative-direction approval, research-to-shotlist development, start/end-frame design, model-specific prompt adaptation, optional read-only history retrieval, and anti-AI-look quality control.
+description: Research, develop, and validate continuity-controlled cinematic shot lists, image prompts, and single-shot video prompt packages from topics, briefs, scripts, partial ideas, visual references, or existing outputs. Use for still-first Magnific workflows targeting models such as Seedream, Nano Banana, Seedance, or Kling; includes creative-direction approval, research-to-shotlist development, start/end-frame design, exact Magnific reference-node binding, model-specific prompt adaptation, optional read-only history retrieval, and anti-AI-look quality control.
 ---
 
 # Cinematic Prompting
@@ -28,6 +28,8 @@ Read [references/Camera-Movement-Language.md](references/Camera-Movement-Languag
 
 Read [references/Model-Adapters.md](references/Model-Adapters.md) only for the target models or Magnific modes relevant to the current request. Verify current platform capabilities when model controls could have changed.
 
+Read [references/Magnific-Reference-Node-Bindings.md](references/Magnific-Reference-Node-Bindings.md) whenever a supplied or available image may be used as a Magnific reference. Use it to decide whether the image should be bound, assign its job, and obtain the exact node name before writing any prompt that mentions it with `@`.
+
 Read [references/Magnific-MCP-Validation.md](references/Magnific-MCP-Validation.md) when the user wants to review generated results and a Magnific connection may be available. Use it to offer optional read-only history retrieval without making the workflow depend on a specific platform or connector.
 
 ## Production defaults
@@ -36,6 +38,7 @@ Read [references/Magnific-MCP-Validation.md](references/Magnific-MCP-Validation.
 - Design a separate end image whenever the final composition, pose, transformation, transition, or product framing matters.
 - Generate one continuous camera shot per video clip. Do not bake multiple shots or cuts into one generated clip unless the user explicitly requests an exception.
 - Before drafting any shot prompt, run a Per-Shot Direction Check. Let the user describe the camera idea, request two or three agent-proposed options, or combine both approaches.
+- Before prompt authorization, check whether a usable reference image is available for the shot or batch. Offer to use it, leave it unused, or review it first. If the user chooses to use it in Magnific, obtain the exact node name shown in Magnific before drafting and preserve that name exactly in the prompt's `@` reference.
 - Treat prompt drafting as locked by default. Present a Prompt Readiness Summary and obtain explicit user authorization before writing the first copy-ready static prompt for a shot or batch. After static approval, reconfirm any affected motion decisions and obtain authorization before writing final video prompts.
 - Describe the camera as a coherent physical choreography: support, path, orientation, lens operation, framing evolution, focus timing, pace, and landing state.
 - Establish and approve mood, style, and visual grammar before building shot prompts. When direction is vague, propose useful creative lanes instead of silently defaulting to generic "cinematic" styling.

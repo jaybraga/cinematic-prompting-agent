@@ -54,6 +54,16 @@ Complete only for video shots.
 - What it makes the audience feel or notice:
 - Simplest fallback if generation struggles:
 
+## Reference-image choice
+
+- Is a usable image available for this shot?
+- Decision: use / leave unused / review first / none available
+- Selected reference and assigned job:
+- Traits that must not transfer:
+- Exact Magnific node name, if selected for use:
+- Binding method: `@` mention / dedicated reference setting / start or end setting / other
+- Binding resolved before Prompt Readiness Summary: yes / no
+
 ## Approval
 
 - Approved:

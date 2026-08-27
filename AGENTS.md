@@ -10,6 +10,7 @@ Follow the skill's routed files and approval gates. In particular:
 - use Shot Research when the user needs help deciding what to show;
 - treat public, commercial, travel, hospitality, workplace, and social environments as plausibly lived-in by default, with context-appropriate background people and activity unless intentional emptiness is approved;
 - run the Per-Shot Direction Check before the first prompt for each shot;
+- before prompt authorization, check whether usable reference images exist; if the user chooses to bind one in Magnific, obtain its exact Magnific node name and use that exact name in every `@` reference rather than guessing from the filename;
 - keep prompt drafting locked until the relevant Prompt Readiness Summary is explicitly approved;
 - develop and approve static start/end frames before final video prompts;
 - describe one continuous camera shot per generated video clip;

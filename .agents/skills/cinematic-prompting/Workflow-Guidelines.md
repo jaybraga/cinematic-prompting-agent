@@ -37,7 +37,7 @@ Always include this new-project check, even if the rest of the brief is complete
 8. **Constraints:** exact brand/product details, usage rights, cultural accuracy, safety, deadline, budget, and iteration limits.
 9. **Visual-development status:** complete shot list, partial ideas, locked script moments, or research-to-shotlist need; define what may be invented, enriched, verified, or must remain unchanged.
 
-Ask what each supplied reference should control.
+Ask what each supplied reference should control, but do not assume every available image should be used. Record which references are merely available and which are selected candidates for specific shots.
 
 Present the missing decisions as one compact guided batch with examples or options. Do not ask the user to generate the questionnaire or supply technical terminology they may not know.
 
@@ -166,7 +166,28 @@ Put the recommended option first. Wait for approval before Phase 6.
 
 For a long shot list, present the checks in a compact table for batch approval. Handle hero shots, ambiguous shots, and technically complex movements individually.
 
-## Phase 5B — Static Prompt Authorization
+## Phase 5B — Reference-image and Magnific node-binding check
+
+Run this check for every shot or approved batch before the Prompt Readiness Summary. Read `references/Magnific-Reference-Node-Bindings.md` when any image is available or may be used.
+
+First ask whether a usable reference image exists, then offer:
+
+1. use the image as a reference;
+2. leave it unused;
+3. review it before deciding;
+4. continue without a reference because none is available.
+
+For each image selected for use:
+
+- assign the exact visual job and priority;
+- identify unwanted traits that must not transfer;
+- confirm whether it is already available in the relevant Magnific canvas or node graph;
+- obtain the exact Magnific node name as displayed in the interface before copy-ready prompt drafting;
+- record whether the image will be addressed through an `@` mention or a dedicated reference/start/end setting in the selected mode.
+
+Do not infer the node name from the filename or invent a placeholder. If the name is unavailable, the user may supply it after uploading, choose not to use the image, or hold the dependent prompt. Keep drafting locked only for prompts that require the unresolved binding; ready prompts may proceed as an explicitly named subset.
+
+## Phase 5C — Static Prompt Authorization
 
 Prompt drafting remains locked after the Per-Shot Direction Check. Compile the approved decisions into a concise Prompt Readiness Summary before writing any copy-ready static prompt.
 
@@ -178,7 +199,8 @@ For each shot or approved batch, confirm:
 - production design, wardrobe/props, lighting, palette, texture, grade, depth of field, and focus;
 - assigned use of any locked brand hex codes and the lived-in occupancy plan or approved empty-space exception;
 - start state, end state, and whether a separate end image is required;
-- references and the job assigned to each;
+- reference-image availability and use decisions;
+- references selected for use, the job assigned to each, and every exact Magnific node name/binding method required by the chosen mode;
 - target image model/mode, output requirements, and material generation risks;
 - for video-bound shots, the approved movement/focus/landing concept that the static endpoints must support;
 - assumptions, recommended defaults, unresolved conflicts, and intentionally deferred items.
@@ -192,20 +214,22 @@ Offer these actions:
 - authorize only a ready subset;
 - hold and revisit research, direction, shot architecture, or continuity.
 
-Do not include the copy-ready prompts in the same response as the authorization request. Continue to Phase 6 only after an unambiguous affirmative response covering the named scope. If some shots are incomplete, authorize and draft only the ready subset.
+Do not include the copy-ready prompts in the same response as the authorization request. Continue to Phase 6 only after an unambiguous affirmative response covering the named scope. If some shots are incomplete or have unresolved selected reference bindings, authorize and draft only the ready subset.
 
 ## Phase 6 — Build the static shot package
 
 Create the static prompt package before any final video prompt.
 
+Build it incrementally when a later static prompt depends on an image that has not yet been generated. For example, if the end image should use the approved start image as a reference, deliver and generate the authorized start prompt first. After the start image is selected, run the reference-image check again, obtain its exact Magnific node name, present a compact readiness update for the end image, and obtain authorization before writing the copy-ready end prompt. Never fill the dependency with a guessed node or production placeholder.
+
 For each shot provide:
 
 1. **Canonical static specification:** model-neutral creative intent.
 2. **Start-image prompt:** copy-ready prompt adapted to the chosen image model.
-3. **End-image decision:** required or not required, with a one-line reason.
-4. **End-image prompt:** when required, describe the final state while preserving locked continuity.
-5. **Reference bindings:** image order and what each reference controls.
-6. **Magnific settings card:** model, mode, aspect ratio, resolution, reference controls, and other relevant live settings.
+3. **End-image decision:** required or not required, with a one-line reason and whether its prompt must wait for an approved start-image node.
+4. **End-image prompt:** when required and all selected bindings are resolved, describe the final state while preserving locked continuity; otherwise mark it as deliberately deferred until the named dependency exists.
+5. **Reference bindings:** image order, what each reference controls, exact confirmed Magnific node names, and whether each is used through an `@` mention or dedicated control.
+6. **Magnific settings card:** model, mode, aspect ratio, resolution, exact node/reference assignments, and other relevant live settings.
 7. **Static acceptance criteria:** the visible conditions that make the frame usable for video.
 
 Separate prompts from explanatory notes so they can be copied without cleanup.
@@ -242,9 +266,12 @@ Do not write the final video prompt until the relevant static frame or frame pai
 
 After static approval, compare the actual start/end images with the approved shot specification. If their geometry, blocking, focus, or endpoints require a movement change, revise and approve that change first.
 
+Re-run the reference binding check for every approved start image, end image, or additional image that will be used by the video mode. Obtain each exact Magnific node name before the video authorization request when the selected mode requires node-based assignment or an `@` mention. If the mode uses dedicated start/end slots, record those exact assignments rather than adding redundant prompt mentions.
+
 Present a concise final motion readiness summary containing:
 
 - approved start/end image IDs;
+- exact Magnific node names and binding methods for selected start/end/additional references;
 - support and camera path;
 - orientation and framing evolution;
 - lens operation;
@@ -271,8 +298,8 @@ For each approved shot provide:
 3. **Camera Movement Breakdown:** support, path, orientation, lens operation, framing evolution, focus choreography, timing/easing, parallax, and landing frame.
 4. **Canonical motion specification:** one continuous shot, independent of model syntax.
 5. **Copy-ready video prompt:** adapted to the selected model and mode, with camera and focus instructions clearly stated.
-6. **Reference bindings:** what the start frame, end frame, or other references control.
-7. **Magnific settings card:** model, image-to-video/start-end mode, duration, aspect ratio, resolution, audio controls, and relevant settings.
+6. **Reference bindings:** what the start frame, end frame, or other references control, with each exact confirmed Magnific node name and binding method.
+7. **Magnific settings card:** model, image-to-video/start-end mode, exact node assignments, duration, aspect ratio, resolution, audio controls, and relevant settings.
 8. **Motion acceptance criteria:** performance, camera path, focus, physical behavior, and final landing state.
 9. **Fallback:** the smallest alternate prompt, reference strategy, model, or post-production solution if the first approach fails.
 

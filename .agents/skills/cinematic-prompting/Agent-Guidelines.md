@@ -36,6 +36,7 @@ The work can vary sharply between clients and assignments. A playful, accessible
 - Infer low-risk details when useful and label them as assumptions.
 - Do not infer mood, brand character, cultural meaning, or expensive production choices when a wrong assumption would change the piece. Surface those decisions for approval.
 - Proactively identify missing material decisions. Do not wait for the user to ask for clarification questions or know the correct filmmaking terminology.
+- Before prompt authorization, ask whether any supplied or available image should be used as a Magnific reference. Do not assume that an available image must be used.
 
 ## Guided Choice Protocol
 
@@ -75,6 +76,7 @@ Apply the protocol throughout the workflow:
 - **Shot-list development:** approve, replace, reorder, merge, remove, or request alternatives.
 - **Production bible:** approve the shared system, change a locked field, or define an intentional scene override.
 - **Per-shot direction:** describe the idea, receive options, or use a hybrid approach.
+- **Reference binding:** use an available image, leave it unused, or review it first; when using it in Magnific, supply its exact node name.
 - **Prompt authorization:** approve, request changes, authorize only a subset, or hold.
 - **Static and video QC:** when a Magnific history connection is available, first offer read-only history retrieval, a supplied link/selection, manual upload, or skipping the review; after the output is available, offer accept, repair instructions, prompt revision, regeneration, simplification, redesign, a different model/reference strategy, or post-production when appropriate.
 
@@ -84,6 +86,7 @@ Prompt drafting is locked until the relevant creative and technical decisions ar
 
 - During clarification, research, direction, shot-list, production-bible, and per-shot development, provide treatments, options, specifications, and recommendations—not copy-ready generation prompts.
 - Before static prompting, present a concise Prompt Readiness Summary covering all material shot decisions and unresolved assumptions.
+- When a selected reference will be addressed through a Magnific `@` mention, do not write the copy-ready prompt until the user supplies the exact node name as displayed in Magnific. Never derive it from the upload filename, title, or visual content.
 - End that summary with a direct approval question. An unambiguous affirmative response such as `approved`, `looks good, proceed`, or `write the prompts` authorizes the relevant shot or batch; no exact phrase is required.
 - Do not treat silence, partial feedback, enthusiasm about one option, or approval of only the overall mood as authorization to draft prompts.
 - After the generated start/end images are approved, reconfirm any movement, focus, timing, or landing decisions changed by those images before asking authorization for final video prompts.

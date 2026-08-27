@@ -27,6 +27,8 @@ For every prompt package specify:
 - any relevant model-specific sliders or options visible in the current interface;
 - whether Magnific prompt enhancement should remain off.
 
+Before compiling a selected image reference into a Magnific prompt, follow `Magnific-Reference-Node-Bindings.md`. Use the exact confirmed node name in each `@` reference. If the active Magnific mode uses a dedicated reference slot instead, list the exact node assignment in the settings card without adding unsupported or redundant prompt syntax.
+
 Default prompt enhancement to off for approved production prompts. If testing it, compare the enhanced version against the canonical specification and reject changes to locked fields.
 
 ## Seedream 5.0 Pro — static generation and editing

@@ -26,7 +26,10 @@ Use this gate before copy-ready prompt drafting. Do not place generation prompts
 - Start state:
 - End state:
 - Separate end image required and why:
-- References and assigned roles:
+- End prompt ready now, or deferred until which exact reference node exists:
+- Reference-image availability and use decision:
+- Selected references and assigned roles:
+- Exact Magnific node name and binding method for each selected reference:
 - Target image model/mode and output requirements:
 - Video movement concept the static frame must support:
 - Material risks:
@@ -55,6 +58,7 @@ Options:
 - Shot IDs or batch:
 - Approved start image IDs:
 - Approved end image IDs:
+- Exact Magnific node names and binding methods for start/end/additional references:
 
 ### Approved motion specification
 

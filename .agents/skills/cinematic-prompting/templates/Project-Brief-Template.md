@@ -74,6 +74,9 @@ Copy this file, fill in what you know, and leave anything uncertain blank.
 - Topic, concept, or script:
 - Shot list:
 - Uploaded references:
+- Reference images currently available for possible use:
+- Which available images do you already want to use, leave unused, or have the assistant review first?
+- For images already loaded into Magnific, exact node name(s) as displayed there, if known:
 - Brand guidelines or source documents:
 - Factual, cultural, historical, or technical research needed:
 
