@@ -1,0 +1,130 @@
+# Worked Example — From Brief to Static-to-Video Prompt
+
+This fictional example shows the workflow in simplified form. It is not a universal style preset.
+
+The brief already defines the subject and basic shot idea, so Shot Research is not needed in this example. If the user had supplied only a broad travel-campaign guideline, the workflow would first use `templates/Shot-Research-Template.md` to develop and approve a proposed shot list.
+
+## 1. Initial brief
+
+> Create a five-second hero shot for a premium travel campaign. A welcome drink sits on a dark stone side table beside a softly lit aircraft window. The feeling should be calm, tactile, and quietly luxurious—not flashy. We will generate the static frames first and animate them later.
+
+## 2. Direction Check
+
+### Recommended direction — Quiet confidence
+
+- **Emotional promise:** private calm and considered service.
+- **Visual thesis:** small tactile details feel more valuable than spectacle.
+- **Palette/light:** soft warm practical light balanced against cool twilight through the window.
+- **Production design:** dark stone, brushed metal, clear glass, restrained textile texture.
+- **Composition/optics:** layered close observation, controlled negative space, natural perspective, selective focus.
+- **Motion principle:** slow and deliberate; nothing calls attention to the camera mechanism.
+- **Avoid:** gold-everywhere luxury clichés, excessive bloom, fake particles, aggressive flare, oversharpened materials, or nightclub saturation.
+
+User approves this direction.
+
+## 3. Per-Shot Direction Check
+
+The user asks the agent to propose options.
+
+### Option A — Controlled foreground reveal (recommended)
+
+- **Audience effect:** discovers the service detail gently; premium and intentional.
+- **Start:** medium-close composition with the window and seat texture readable; glass present but not dominant.
+- **Movement:** stabilized diagonal dolly forward and camera-right, creating subtle foreground parallax.
+- **Focus:** begins on the window-side environment, then racks once to the glass.
+- **End:** tighter hero composition with the drink sharp on the right third and the cabin softly layered behind.
+- **Risk:** moderate; requires compatible start/end geometry and a clean focus landing.
+
+### Option B — Static observational frame
+
+- **Audience effect:** composed, restrained, and quietly observational.
+- **Start/end:** locked close composition; only condensation and distant cabin light move.
+- **Focus:** fixed on the glass.
+- **Risk:** low, but less sense of discovery.
+
+### Option C — Gentle orbit around the glass
+
+- **Audience effect:** more overt product heroism and dimensionality.
+- **Movement:** short arc around the drink while holding its size.
+- **Focus:** remains on the glass.
+- **Risk:** higher; reflections and table/window geometry may drift.
+
+User selects Option A.
+
+## 4. Static Prompt Readiness Summary
+
+Before writing prompts, the agent consolidates the approved shot:
+
+- **Purpose/beat:** reveal a refined service detail through quiet discovery.
+- **Subject/action:** welcome drink remains physically stable beside the aircraft window.
+- **Composition:** layered medium-close start resolving into a tighter right-third product hero.
+- **Camera:** seated eye level, natural restrained perspective, diagonal forward and camera-right movement concept.
+- **Lens/focus:** fixed focal-length behavior; shallow but controlled depth; environment-to-glass focus transition planned for video.
+- **Lighting/design:** cool twilight outside, warm motivated cabin practical, dark stone, brushed metal, clear glass, restrained cabin textiles.
+- **Start/end:** separate end image required to control final product framing and focus destination.
+- **Continuity:** lock cabin geometry, window, table, glass, liquid level, materials, palette, and light direction.
+- **Target/risk:** image generation first; reflections, glass geometry, condensation, and start/end spatial compatibility require attention.
+- **Unresolved conflicts:** none.
+
+The agent asks:
+
+> Approve this specification and authorize the start- and end-image prompts for this shot?
+
+It clearly offers: approve and proceed, request changes to named fields, authorize only part of a batch, or hold and revisit an earlier decision.
+
+The user approves. Only then does the agent provide the following prompts.
+
+## 5. Start-image prompt
+
+```text
+Create a photorealistic premium-travel campaign still inside a refined modern aircraft cabin at twilight. A clear welcome drink rests on a dark honed-stone side table beside an aircraft window, visible but not yet the dominant subject. Compose a layered medium-close frame from seated eye level, with the window and softly illuminated cabin material in the midground and the glass positioned slightly right of center. Use a natural restrained perspective with believable proportions, shallow but not extreme depth of field, initial focus held on the window-side environment, and the glass slightly softer. Balance cool twilight from outside with a warm, motivated cabin practical, producing gentle highlight roll-off, controlled reflections, tactile stone, brushed metal, clear glass, and realistic condensation. Quiet confidence, private calm, refined service, no flashy luxury clichés, no excessive bloom, no particles, no aggressive flare, no oversharpening, no text, no watermark.
+```
+
+## 6. End-image prompt
+
+```text
+Using the approved start image as the exact reference for cabin design, table geometry, window position, glass design, materials, palette, and lighting direction, create the final frame of the same continuous shot. Move the viewpoint physically closer and slightly camera-right, preserving believable parallax and all object geometry. End in a tighter layered hero composition with the welcome drink sharp on the right third, realistic condensation and reflections clearly resolved, while the aircraft window and cabin materials remain softly defocused behind it. Preserve the quiet, tactile, restrained premium mood. Do not change the glass, liquid level, table, window, lighting direction, color palette, or cabin design. No added objects, text, logo, flare, particles, or excessive bloom.
+```
+
+## 7. Static approval
+
+The user generates and approves both images. The agent verifies that the geometry, lighting, focus endpoints, and proposed movement remain compatible.
+
+## 8. Video Prompt Readiness Summary
+
+The agent presents the final movement plan before writing the video prompt:
+
+```text
+Support: stabilized wheeled dolly
+Start: medium-close seated-eye-level composition; focus on the window-side environment
+Path: tracks diagonally forward and camera-right
+Orientation: slight counter-pan left to keep the glass moving toward the right-third hero position
+Lens operation: fixed focal length; no optical zoom
+Framing evolution: environment-led composition becomes a tighter product-led composition with increasing foreground parallax
+Focus: one measured rack from the window-side environment to the welcome drink, triggered after the move begins and landing during the final second
+Timing: five seconds; gentle acceleration, measured travel, soft deceleration, brief final hold
+End: drink sharp on the right third; cabin and window softly layered behind; camera settled
+```
+
+The agent asks:
+
+> Approve this motion specification and authorize the final video prompt for this shot?
+
+It clearly offers: approve and proceed, modify the movement/focus/timing, simplify the move, or return to static-frame repair.
+
+The user approves. Only then does the agent provide the video prompt.
+
+## 9. Video prompt
+
+```text
+One continuous five-second photorealistic shot using the approved start image as the opening frame and the approved end image as the precise landing frame. The camera moves on a stabilized dolly, tracking diagonally forward and camera-right at a slow measured pace while counter-panning slightly left to preserve the glass's path toward the right-third hero position. Keep a fixed focal length with natural perspective and increasing foreground parallax; do not use an optical zoom. Begin with focus held on the window-side cabin environment. After the dolly move is established, perform one deliberate, smooth rack focus from the environment to the welcome drink, landing during the final second and holding. Condensation remains physically stable, the liquid barely responds to the movement, and cabin light stays consistent. Decelerate gently and settle into the approved end composition for a brief clean hold. No cuts, no angle change, no random reframing, no focus hunting, no object morphing, and no changes to glass, table, window, materials, palette, or lighting direction.
+```
+
+## 10. Acceptance criteria
+
+- The clip remains one uninterrupted camera take.
+- The path is diagonally forward and camera-right, not a digital zoom.
+- The rack focus occurs once and lands cleanly on the glass.
+- The final frame closely matches the approved end image.
+- Glass, liquid, reflections, table, window, and lighting remain stable.
+- The camera settles long enough to create an editable endpoint.
