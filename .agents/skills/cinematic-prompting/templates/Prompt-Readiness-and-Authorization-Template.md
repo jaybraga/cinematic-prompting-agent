@@ -19,8 +19,9 @@ Use this gate before copy-ready prompt drafting. Do not place generation prompts
 - Lens/perspective behavior:
 - Aspect ratio:
 - Foreground/midground/background and visual hierarchy:
+- Lived-in occupancy and secondary human/environmental activity, or approved empty-space exception:
 - Production design, wardrobe, and props:
-- Lighting, palette, texture, and grade:
+- Lighting, palette, approved brand hex use, texture, and grade:
 - Depth of field and focus:
 - Start state:
 - End state:

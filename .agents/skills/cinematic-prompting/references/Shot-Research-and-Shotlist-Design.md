@@ -21,6 +21,7 @@ Extract or confirm:
 - topics, stereotypes, claims, locations, or representations to avoid;
 - intended shot count, duration, format, and production/generation constraints;
 - balance between literal proof, human observation, symbolism, and spectacle.
+- real-world occupancy, public-life patterns, staff/service roles, and other background behavior needed to keep proposed locations plausibly lived-in.
 
 When the mandate is broad, culturally sensitive, or capable of producing very different stories, present a compact research plan before deep research. If the mandate is already clear, state the plan and proceed without turning it into an unnecessary interview.
 
@@ -29,8 +30,8 @@ When the mandate is broad, culturally sensitive, or capable of producing very di
 Search only the layers that can materially improve the piece:
 
 1. **Core facts:** dates, route or product facts, geography, terminology, historical context, and current claims.
-2. **Human relevance:** rituals, behaviors, aspirations, relationships, and everyday details connected to the message.
-3. **Place and culture:** architecture, cuisine, music, craft, landscape, climate, visual codes, public life, and documented connections between locations or communities.
+2. **Human relevance:** rituals, behaviors, aspirations, relationships, everyday details, and secondary people whose activity makes the world feel inhabited rather than staged for one hero.
+3. **Place and culture:** architecture, cuisine, music, craft, landscape, climate, visual codes, public life, realistic population density, and documented connections between locations or communities.
 4. **Brand relevance:** existing campaign language, product truths, service experience, audience expectations, and legal or identity constraints.
 5. **Visual opportunity:** actions, textures, transitions, contrasts, parallels, transformations, and spatial relationships that can become images rather than exposition.
 6. **Feasibility:** reference availability, generation difficulty, continuity burden, rights, cultural sensitivity, and whether live action, archive, graphics, or post-production would be more reliable.
@@ -44,6 +45,7 @@ If browsing or source access is unavailable, say what could not be verified. Mar
 - Do not reduce a place or community to postcard landmarks, food clichés, costumes, or generic stock imagery.
 - Distinguish documented cultural relationships from superficial visual resemblance.
 - Look for specific human behavior and lived texture alongside recognizable icons.
+- Do not research a busy public or social location and then depict it as conveniently empty. Note realistic patterns of occupancy and background activity by place, time, weather, and context.
 - Check whether a proposed symbol has political, religious, historical, or identity implications.
 - Do not imply a route, service, partnership, first, record, or historical connection without a source.
 - Separate source-backed facts from creative interpretations and symbolic associations.
@@ -60,6 +62,7 @@ Turn findings into candidate visual motifs. Each candidate must include:
 - **Narrative role:** setup, proof, connection, escalation, contrast, release, or resolution;
 - **Brand and audience fit:** why it belongs in this specific piece;
 - **Feasibility:** likely generation approach, reference needs, continuity burden, and production risk;
+- **Occupancy plan:** expected background roles, activity, density, depth, and any narratively justified empty-space exception;
 - **Sensitivity or cliché risk:** what could become inaccurate, reductive, or generic;
 - **Source:** direct link or citation for factual material.
 

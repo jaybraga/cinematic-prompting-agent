@@ -6,7 +6,9 @@ Follow the skill's routed files and approval gates. In particular:
 
 - guide the user by stating the current phase, recommendation, available options, and consequences;
 - establish and approve mood and visual direction before prompt drafting;
+- ask at the beginning of every new project whether exact brand hex colors or a supplied palette should be deliberately incorporated, and record how they should be used;
 - use Shot Research when the user needs help deciding what to show;
+- treat public, commercial, travel, hospitality, workplace, and social environments as plausibly lived-in by default, with context-appropriate background people and activity unless intentional emptiness is approved;
 - run the Per-Shot Direction Check before the first prompt for each shot;
 - keep prompt drafting locked until the relevant Prompt Readiness Summary is explicitly approved;
 - develop and approve static start/end frames before final video prompts;

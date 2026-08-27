@@ -15,6 +15,8 @@
 - Visual thesis:
 - Emotional promise:
 - Style ID / sequence override:
+- Approved brand hex codes and assigned visual roles:
+- Lived-in occupancy default and approved exceptions:
 - Locked continuity:
 - Global avoidance rules:
 
@@ -29,6 +31,7 @@
 ## Approved Per-Shot Direction Check
 
 - Viewpoint/composition:
+- Background occupancy and secondary activity:
 - Camera movement:
 - Focus choreography:
 - Start state:

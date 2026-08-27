@@ -25,13 +25,17 @@ Tell the user which operating mode you recommend and let them preserve existing 
 
 Extract what is already known, then ask one compact batch covering only missing decisions that could change the work:
 
+Always include this new-project check, even if the rest of the brief is complete: `Is there a particular brand hex code or defined palette we should deliberately incorporate in the images?` Offer three answer paths: exact hex code(s) with priority; derive the palette from supplied brand guidelines or references; or no locked brand color. If a code is supplied, ask only the necessary follow-up about intended use or exclusions and recommend plausible integration surfaces rather than assuming a global color cast.
+
 1. **Purpose and audience:** desired response, message, action, placement, and viewing context.
 2. **Deliverables:** still/video, shot count, duration, aspect ratio, resolution, frame rate, audio, copy, logo, and platform requirements.
 3. **Mood and style:** emotional promise, realism versus stylization, references, anti-references, brand character, and intended production value.
-4. **Continuity:** recurring talent, characters, products, wardrobe, props, locations, time progression, and deliberate changes.
-5. **Cinematography:** shot language, format feel, lens behavior, depth of field, movement, focus, lighting, grade, and texture.
-6. **Constraints:** exact brand/product details, usage rights, cultural accuracy, safety, deadline, budget, and iteration limits.
-7. **Visual-development status:** complete shot list, partial ideas, locked script moments, or research-to-shotlist need; define what may be invented, enriched, verified, or must remain unchanged.
+4. **Brand color:** exact hex codes or defined palette, priority, intended integration surfaces, exclusions, and whether exact compliance needs finishing or compositing.
+5. **Continuity:** recurring talent, characters, products, wardrobe, props, locations, time progression, and deliberate changes.
+6. **Cinematography:** shot language, format feel, lens behavior, depth of field, movement, focus, lighting, grade, and texture.
+7. **World occupancy:** expected background population and secondary activity; identify any shot or sequence that intentionally requires isolation, exclusivity, closure, or an empty environment.
+8. **Constraints:** exact brand/product details, usage rights, cultural accuracy, safety, deadline, budget, and iteration limits.
+9. **Visual-development status:** complete shot list, partial ideas, locked script moments, or research-to-shotlist need; define what may be invented, enriched, verified, or must remain unchanged.
 
 Ask what each supplied reference should control.
 
@@ -51,8 +55,9 @@ The Direction Check must include:
 - emotional promise and visual thesis;
 - realism/stylization level;
 - palette and lighting logic;
+- approved brand hex codes, their intended visual roles, and surfaces that should remain naturally colored;
 - production design and material language;
-- performance and human energy;
+- performance, human energy, occupancy, and secondary life in the environment;
 - composition, optics, texture, and grade;
 - motion and pacing principles for video;
 - anti-goals and recognizable AI failure risks;
@@ -87,6 +92,8 @@ After the Direction Check is approved, define:
 - character, product, wardrobe, location, and prop descriptions;
 - reference manifest and role assignments;
 - camera, lens, focus, lighting, color, texture, and movement grammar;
+- brand-color integration map and tolerance for exact versus perceptual matching;
+- lived-in occupancy grammar: expected density, background roles, secondary actions, and approved empty-space exceptions;
 - scene or sequence overrides;
 - target-model and generation-mode strategy;
 - acceptance criteria.
@@ -106,6 +113,7 @@ Assign:
 - composition, shot size, camera height/angle, and lens behavior;
 - start state, action, and end state;
 - lighting and environmental behavior;
+- context-appropriate background people, staff, passersby, patrons, or other secondary life, with an explicit reason for any empty-space exception;
 - references and continuity carried in/out;
 - whether an end frame is required.
 
@@ -128,6 +136,7 @@ For every still image, confirm or propose:
 - lens/perspective behavior;
 - subject placement and visual hierarchy;
 - foreground, midground, and background design;
+- occupancy, background human activity, and secondary environmental action;
 - depth of field and focus plane;
 - how the viewpoint expresses the approved mood and shot function.
 
@@ -167,6 +176,7 @@ For each shot or approved batch, confirm:
 - shot size, composition, camera position, height, angle, lens/perspective behavior, and aspect ratio;
 - foreground/midground/background design and visual hierarchy;
 - production design, wardrobe/props, lighting, palette, texture, grade, depth of field, and focus;
+- assigned use of any locked brand hex codes and the lived-in occupancy plan or approved empty-space exception;
 - start state, end state, and whether a separate end image is required;
 - references and the job assigned to each;
 - target image model/mode, output requirements, and material generation risks;
@@ -220,6 +230,7 @@ After the exact images are selected, review them against:
 - composition and shot function;
 - location geography and continuity;
 - light direction, palette, material response, and texture;
+- brand-color integration, plausible occupancy, background human behavior, and whether the environment feels operational rather than staged or abandoned;
 - hands, typography, logos, packaging, reflections, shadows, and topology;
 - start/end compatibility and plausible motion path.
 

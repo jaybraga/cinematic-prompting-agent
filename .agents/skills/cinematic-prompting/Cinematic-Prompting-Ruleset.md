@@ -29,7 +29,16 @@ Every video shot must begin with a static version of that exact shot.
 - Store the approved base direction in the production bible.
 - Record scene-specific or sequence-specific departures as intentional overrides rather than weakening the base direction.
 
-## 4. Research before inventing missing shots
+## 4. Brand-palette intake and controlled integration
+
+- At the beginning of every new project, explicitly ask whether a particular brand hex code or defined palette should be incorporated in the imagery.
+- Offer three clear paths: supply exact hex code(s) and priorities; derive a palette from supplied guidelines or references; or use no locked brand color.
+- Record each approved code in the production bible with its intended role, priority, and exclusions. Suitable roles can include wardrobe accents, props, set dressing, signage, practical light, interface elements, product details, or selective grade relationships.
+- Do not interpret a brand color as permission to apply a global wash, recolor every object, contaminate believable skin tones, or erase the natural color identity of a location.
+- Use exact hex values as design targets, not a promise that a generative model will reproduce colorimetry perfectly. When exact compliance matters, recommend controlled grading, masks, compositing, or a measured finishing pass.
+- Preserve color hierarchy. The brand color may be a hero accent, supporting rhythm, or environmental echo; it does not need to dominate every frame.
+
+## 5. Research before inventing missing shots
 
 - When the user lacks a usable shot list or requests visual discovery, research what is relevant to show before drafting shots or prompts.
 - Define the research mandate from the communication objective, audience, approved direction, factual/cultural scope, required proof, and production constraints.
@@ -39,7 +48,7 @@ Every video shot must begin with a static version of that exact shot.
 - When useful, propose two or three distinct narrative routes and obtain approval before converting the selected route into a proposed shot list.
 - Obtain approval of the proposed shot list before production prompts. Skip this stage when supplied visuals are already sufficient unless the user requests enrichment or verification.
 
-## 5. Per-Shot Direction Check before drafting
+## 6. Per-Shot Direction Check before drafting
 
 - Do not write the first static prompt for a shot until its viewpoint and camera intention have been checked.
 - For every still image, confirm or propose framing, camera height, angle, lens/perspective behavior, subject placement, depth, and focus plane.
@@ -49,10 +58,10 @@ Every video shot must begin with a static version of that exact shot.
 - Recommend one option and explain its visible benefit and generation risk.
 - Obtain approval before building start/end-frame prompts.
 
-## 6. Mandatory Prompt Authorization Gate
+## 7. Mandatory Prompt Authorization Gate
 
 - Copy-ready image and video prompt drafting is locked by default.
-- Before the first static prompt for a shot, all material fields must be decided or surfaced as explicit defaults: purpose, subject/action, shot size, composition, camera position/height/angle, lens and perspective behavior, aspect ratio, production design, lighting, palette, depth of field, focus, start state, end state and end-image decision, continuity, references, target model/mode, and generation constraints.
+- Before the first static prompt for a shot, all material fields must be decided or surfaced as explicit defaults: purpose, subject/action, shot size, composition, camera position/height/angle, lens and perspective behavior, aspect ratio, production design, lighting, palette and assigned brand-color use, lived-in occupancy/background activity or an approved emptiness exception, depth of field, focus, start state, end state and end-image decision, continuity, references, target model/mode, and generation constraints.
 - For video shots, also decide support/stability, three-dimensional path, orientation, lens operation, framing evolution, focus choreography, timing/easing, subject/environmental motion, landing frame, and continuity risks.
 - Present these decisions as a concise Prompt Readiness Summary. Clearly label any remaining assumption, recommended default, unresolved conflict, or high-risk instruction.
 - Ask the user to approve the specification and authorize prompt drafting. Do not infer authorization from earlier approval of mood, research, a narrative route, a shot list, or one camera option.
@@ -61,14 +70,14 @@ Every video shot must begin with a static version of that exact shot.
 - Static-prompt authorization does not automatically authorize final video prompts. After the actual start/end images are approved, reconfirm affected motion decisions and obtain video-prompt authorization.
 - A direct request to revise an existing prompt authorizes only that requested revision, provided it does not introduce unresolved conflicts with locked decisions.
 
-## 7. Canonical intent before model syntax
+## 8. Canonical intent before model syntax
 
 - Maintain a model-neutral production bible and canonical specification for every shot.
 - Treat model prompts as compiled outputs, not the source of creative truth.
 - Never silently change an approved subject, product, wardrobe, location, mood, camera rule, or continuity state to accommodate a model.
 - If a model cannot reliably execute the specification, recommend a different mode, reference strategy, shot design, model, or post-production solution.
 
-## 8. Locked invariants and controlled variables
+## 9. Locked invariants and controlled variables
 
 For campaigns and sequences, explicitly separate:
 
@@ -77,7 +86,7 @@ For campaigns and sequences, explicitly separate:
 
 Only accepted, intentional changes may update the continuity state. Never propagate accidental generation drift into later prompts.
 
-## 9. Image prompts describe a state; video prompts describe change
+## 10. Image prompts describe a state; video prompts describe change
 
 Static prompts prioritize:
 
@@ -101,7 +110,7 @@ Video prompts prioritize:
 
 Do not unnecessarily redescribe or destabilize visual information already locked by the input images.
 
-## 10. Camera language must have a visible purpose
+## 11. Camera language must have a visible purpose
 
 - Camera and lens names are shorthand, not substitutes for direction.
 - Translate references such as ARRI, RED, Fujifilm, anamorphic, spherical, vintage glass, or film stock into the characteristics that matter: format feel, perspective, focal length, distance, depth of field, focus falloff, flare, distortion, highlight behavior, color, contrast, grain, halation, frame rate, shutter, and motion blur.
@@ -113,14 +122,24 @@ Do not unnecessarily redescribe or destabilize visual information already locked
 - Avoid stacks of unrelated moves that would require several camera setups or create contradictory motion.
 - Preserve plausible screen direction, eyelines, geography, contact, shadow direction, reflections, and physical causality.
 
-## 11. References must have assigned jobs
+## 12. References must have assigned jobs
 
 - Label what each reference controls: identity, wardrobe, product, location, composition, pose, lighting, palette, texture, camera movement, performance, or sound.
 - Do not attach a pile of references without explaining their relationships or priority.
 - When references conflict, resolve the conflict before prompting.
 - Use accepted start and end images ahead of verbal re-description whenever exact framing or continuity matters.
 
-## 12. Anti-AI-look standard
+## 13. Lived-in world and plausible occupancy
+
+- Unless the user explicitly directs otherwise, environments should feel inhabited, operational, and socially plausible rather than staged, abandoned, or reserved exclusively for the main character.
+- Public, commercial, travel, hospitality, workplace, leisure, and social spaces normally include context-appropriate secondary people and activity. A Rio beachfront promenade should reflect believable pedestrian, beach, kiosk, traffic, and service life; a functioning restaurant should normally contain other patrons and staff.
+- Match population density and behavior to the real place, time, weather, culture, and narrative. `Lived-in` does not mean maximum crowd density, uncontrolled clutter, or forcing visible faces into every frame.
+- Build depth with varied background roles, actions, spacing, scale, occlusion, and focus. Keep the main subject and visual hierarchy clear while allowing the world to continue around them.
+- Avoid duplicated extras, repeated faces or wardrobe, perfectly spaced groups, synchronized gestures, frozen crowds, generic stock poses, and background people who stare at the camera or steal the narrative beat.
+- For video, give secondary people restrained, independent, physically plausible actions that support the scene without creating unnecessary temporal instability.
+- Treat an empty, closed, private, evacuated, after-hours, surreal, or intentionally isolated environment as a deliberate exception. Record and approve the reason instead of allowing a model to empty the location by default.
+
+## 14. Anti-AI-look standard
 
 Reject or repair outputs with:
 
@@ -131,11 +150,12 @@ Reject or repair outputs with:
 - impossible reflections, shadows, contact, scale, topology, or material response;
 - mutated typography, logos, packaging, controls, seams, jewelry, hands, or product geometry;
 - sterile symmetry or generic production design;
+- implausibly empty public or social locations, background extras that look cloned or arranged, and spaces that feel closed solely because the model omitted normal human activity;
 - temporal morphing, sliding contact points, liquid cloth, unstable hands, random focus hunting, or continuity drift.
 
 Treat optical imperfection as a controlled system. Prefer a coherent clean master and add strong grain, halation, aberration, or distressed texture in finishing when practical.
 
-## 13. Research and current capabilities
+## 15. Research and current capabilities
 
 - Research only when it improves current model accuracy, technical accuracy, cultural or historical authenticity, location/product fidelity, or reference analysis.
 - For research-to-shotlist work, preserve sources, uncertainty, cultural considerations, and the reason each finding matters to the piece.
@@ -143,7 +163,7 @@ Treat optical imperfection as a controlled system. Prefer a coherent clean maste
 - Verify the current Magnific model, mode, aspect ratio, duration, reference, and control options before asserting that a setting is available.
 - Do not blindly use automatic prompt enhancement if it might alter approved creative or continuity decisions.
 
-## 14. Optional connected-history validation and credit safety
+## 16. Optional connected-history validation and credit safety
 
 - Do not make Magnific MCP or any other connector a required part of the workflow. Detect only capabilities actually available in the current platform and preserve a manual upload/link path.
 - When output review is due and read-only Magnific history access is available, offer it as an explicit user choice. Do not search account history automatically.
@@ -152,7 +172,7 @@ Treat optical imperfection as a controlled system. Prefer a coherent clean maste
 - Do not assume an account's unlimited plan applies through a connector. If a connector reports balance, cost, or unlimited-session limitations, disclose the relevant information before any paid action.
 - Treat connector metadata as a retrieval aid, not creative truth. Only accepted intentional visual results may update continuity or become approved start/end frames.
 
-## 15. Approval and version integrity
+## 17. Approval and version integrity
 
 - For campaigns, sequences, and scripts, obtain approval of the creative treatment and production bible before shot prompting.
 - When Shot Research is used, obtain approval of the narrative route and proposed shot list before production-bible and shot-prompt development.

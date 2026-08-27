@@ -10,4 +10,4 @@ Quick path:
 2. Follow the setup for your AI platform in `START-HERE.md`.
 3. Copy `templates/Project-Brief-Template.md`, fill in what you know, and give it to the assistant.
 
-The assistant should confirm the overall mood/style and the direction of each shot before it writes generation prompts. When an active Magnific connection supports read-only history access, it may also offer to retrieve selected results for validation; this is optional and never authorizes generation or transformation.
+The assistant should begin each new project by checking for exact brand hex colors or a supplied palette, confirm the overall mood/style and the direction of each shot, and keep environments plausibly lived-in unless intentional emptiness is approved. It must do this before it writes generation prompts. When an active Magnific connection supports read-only history access, it may also offer to retrieve selected results for validation; this is optional and never authorizes generation or transformation.

@@ -26,6 +26,8 @@ Choose one:
 - Lens/perspective behavior:
 - Subject placement:
 - Foreground/midground/background:
+- Background occupancy, human activity, and secondary environmental action:
+- Approved reason for intentional emptiness, if applicable:
 - Depth of field and initial focus plane:
 - How this viewpoint expresses the mood and shot purpose:
 

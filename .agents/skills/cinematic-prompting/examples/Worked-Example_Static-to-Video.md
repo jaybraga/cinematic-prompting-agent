@@ -6,7 +6,7 @@ The brief already defines the subject and basic shot idea, so Shot Research is n
 
 ## 1. Initial brief
 
-> Create a five-second hero shot for a premium travel campaign. A welcome drink sits on a dark stone side table beside a softly lit aircraft window. The feeling should be calm, tactile, and quietly luxurious—not flashy. We will generate the static frames first and animate them later.
+> Create a five-second hero shot for a fictional premium travel campaign. A welcome drink sits on a dark stone side table beside a softly lit aircraft window. The feeling should be calm, tactile, and quietly luxurious—not flashy. Incorporate the fictional brand's rust-orange `#C86A3A` as a restrained accent rather than a global tint. The cabin should feel operational and inhabited, with other passengers present in the background without distracting from the drink. We will generate the static frames first and animate them later.
 
 ## 2. Direction Check
 
@@ -14,8 +14,8 @@ The brief already defines the subject and basic shot idea, so Shot Research is n
 
 - **Emotional promise:** private calm and considered service.
 - **Visual thesis:** small tactile details feel more valuable than spectacle.
-- **Palette/light:** soft warm practical light balanced against cool twilight through the window.
-- **Production design:** dark stone, brushed metal, clear glass, restrained textile texture.
+- **Palette/light:** soft warm practical light balanced against cool twilight through the window; `#C86A3A` appears only as a controlled upholstery-piping and service-detail accent.
+- **Production design:** dark stone, brushed metal, clear glass, restrained textile texture, and a believable softly occupied cabin rather than an empty showroom.
 - **Composition/optics:** layered close observation, controlled negative space, natural perspective, selective focus.
 - **Motion principle:** slow and deliberate; nothing calls attention to the camera mechanism.
 - **Avoid:** gold-everywhere luxury clichés, excessive bloom, fake particles, aggressive flare, oversharpened materials, or nightclub saturation.
@@ -61,6 +61,8 @@ Before writing prompts, the agent consolidates the approved shot:
 - **Camera:** seated eye level, natural restrained perspective, diagonal forward and camera-right movement concept.
 - **Lens/focus:** fixed focal-length behavior; shallow but controlled depth; environment-to-glass focus transition planned for video.
 - **Lighting/design:** cool twilight outside, warm motivated cabin practical, dark stone, brushed metal, clear glass, restrained cabin textiles.
+- **Brand color:** fictional `#C86A3A` used sparingly in upholstery piping and one service detail; no global orange wash and no contamination of skin or exterior twilight.
+- **Occupancy:** other seated passengers and subtle service life remain visible in layered soft focus; the cabin is not empty, but the drink keeps clear visual priority.
 - **Start/end:** separate end image required to control final product framing and focus destination.
 - **Continuity:** lock cabin geometry, window, table, glass, liquid level, materials, palette, and light direction.
 - **Target/risk:** image generation first; reflections, glass geometry, condensation, and start/end spatial compatibility require attention.
@@ -77,13 +79,13 @@ The user approves. Only then does the agent provide the following prompts.
 ## 5. Start-image prompt
 
 ```text
-Create a photorealistic premium-travel campaign still inside a refined modern aircraft cabin at twilight. A clear welcome drink rests on a dark honed-stone side table beside an aircraft window, visible but not yet the dominant subject. Compose a layered medium-close frame from seated eye level, with the window and softly illuminated cabin material in the midground and the glass positioned slightly right of center. Use a natural restrained perspective with believable proportions, shallow but not extreme depth of field, initial focus held on the window-side environment, and the glass slightly softer. Balance cool twilight from outside with a warm, motivated cabin practical, producing gentle highlight roll-off, controlled reflections, tactile stone, brushed metal, clear glass, and realistic condensation. Quiet confidence, private calm, refined service, no flashy luxury clichés, no excessive bloom, no particles, no aggressive flare, no oversharpening, no text, no watermark.
+Create a photorealistic premium-travel campaign still inside a refined modern aircraft cabin at twilight. A clear welcome drink rests on a dark honed-stone side table beside an aircraft window, visible but not yet the dominant subject. Compose a layered medium-close frame from seated eye level, with the window and softly illuminated cabin material in the midground and the glass positioned slightly right of center. The cabin is operational and plausibly inhabited: a few other seated passengers and a subtle service presence remain naturally layered in the deeper background, partially occluded and softly defocused, with varied posture and no one looking at camera. Use a natural restrained perspective with believable proportions, shallow but not extreme depth of field, initial focus held on the window-side environment, and the glass slightly softer. Balance cool twilight from outside with a warm, motivated cabin practical, producing gentle highlight roll-off, controlled reflections, tactile stone, brushed metal, clear glass, and realistic condensation. Integrate the fictional rust-orange brand color `#C86A3A` only as restrained upholstery piping and one small service-detail accent; preserve natural skin tones, glass, stone, metal, and exterior twilight without an orange wash. Quiet confidence, private calm, refined service, no empty-showroom cabin, no cloned or perfectly spaced passengers, no flashy luxury clichés, no excessive bloom, no particles, no aggressive flare, no oversharpening, no text, no watermark.
 ```
 
 ## 6. End-image prompt
 
 ```text
-Using the approved start image as the exact reference for cabin design, table geometry, window position, glass design, materials, palette, and lighting direction, create the final frame of the same continuous shot. Move the viewpoint physically closer and slightly camera-right, preserving believable parallax and all object geometry. End in a tighter layered hero composition with the welcome drink sharp on the right third, realistic condensation and reflections clearly resolved, while the aircraft window and cabin materials remain softly defocused behind it. Preserve the quiet, tactile, restrained premium mood. Do not change the glass, liquid level, table, window, lighting direction, color palette, or cabin design. No added objects, text, logo, flare, particles, or excessive bloom.
+Using the approved start image as the exact reference for cabin design, table geometry, window position, glass design, materials, palette, background occupancy, and lighting direction, create the final frame of the same continuous shot. Move the viewpoint physically closer and slightly camera-right, preserving believable parallax, all object geometry, and the softly layered presence of the same background passengers. End in a tighter layered hero composition with the welcome drink sharp on the right third, realistic condensation and reflections clearly resolved, while the aircraft window, cabin materials, and inhabited background remain softly defocused behind it. Preserve the quiet, tactile, restrained premium mood and the limited `#C86A3A` accent placement. Do not change the glass, liquid level, table, window, passenger identities, lighting direction, color palette, or cabin design. No added or removed people, cloned extras, text, logo, flare, particles, excessive bloom, or global orange wash.
 ```
 
 ## 7. Static approval
@@ -117,7 +119,7 @@ The user approves. Only then does the agent provide the video prompt.
 ## 9. Video prompt
 
 ```text
-One continuous five-second photorealistic shot using the approved start image as the opening frame and the approved end image as the precise landing frame. The camera moves on a stabilized dolly, tracking diagonally forward and camera-right at a slow measured pace while counter-panning slightly left to preserve the glass's path toward the right-third hero position. Keep a fixed focal length with natural perspective and increasing foreground parallax; do not use an optical zoom. Begin with focus held on the window-side cabin environment. After the dolly move is established, perform one deliberate, smooth rack focus from the environment to the welcome drink, landing during the final second and holding. Condensation remains physically stable, the liquid barely responds to the movement, and cabin light stays consistent. Decelerate gently and settle into the approved end composition for a brief clean hold. No cuts, no angle change, no random reframing, no focus hunting, no object morphing, and no changes to glass, table, window, materials, palette, or lighting direction.
+One continuous five-second photorealistic shot using the approved start image as the opening frame and the approved end image as the precise landing frame. The camera moves on a stabilized dolly, tracking diagonally forward and camera-right at a slow measured pace while counter-panning slightly left to preserve the glass's path toward the right-third hero position. Keep a fixed focal length with natural perspective and increasing foreground parallax; do not use an optical zoom. Begin with focus held on the window-side cabin environment. After the dolly move is established, perform one deliberate, smooth rack focus from the environment to the welcome drink, landing during the final second and holding. Background passengers remain consistent and make only restrained independent micro-movements appropriate to a calm flight; no one looks at camera, disappears, duplicates, or draws focus. Condensation remains physically stable, the liquid barely responds to the movement, the limited `#C86A3A` accents stay fixed, and cabin light stays consistent. Decelerate gently and settle into the approved end composition for a brief clean hold. No cuts, no angle change, no random reframing, no focus hunting, no object morphing, and no changes to glass, table, window, people, materials, palette, or lighting direction.
 ```
 
 ## 10. Acceptance criteria
@@ -127,4 +129,6 @@ One continuous five-second photorealistic shot using the approved start image as
 - The rack focus occurs once and lands cleanly on the glass.
 - The final frame closely matches the approved end image.
 - Glass, liquid, reflections, table, window, and lighting remain stable.
+- The cabin remains plausibly inhabited without cloned, disappearing, frozen, or attention-stealing background people.
+- The `#C86A3A` accent remains restrained and does not become a global color cast.
 - The camera settles long enough to create an editable endpoint.

@@ -12,7 +12,9 @@ It helps you:
 - research relevant facts, culture, places, behaviors, and visual motifs when you do not yet know what to show;
 - turn that research into narrative-route options and a proposed shot list;
 - decide the mood and style before prompt writing;
+- ask whether exact brand hex colors or a supplied palette should be integrated, and define where they belong;
 - plan each shot's viewpoint, composition, camera movement, and focus;
+- keep public, commercial, travel, hospitality, workplace, and social environments plausibly lived-in unless you intentionally approve an empty or private scenario;
 - create and approve static start images before generating video;
 - create end images when the final framing or action needs control;
 - write one continuous camera shot per generated video file;
@@ -51,6 +53,8 @@ Double-click the ZIP on macOS or Windows. Keep the folder structure intact. Do n
 
 Open `templates/Project-Brief-Template.md`, make a copy, and fill in whatever you know. It is fine to leave fields blank—the assistant should ask only the questions that matter.
 
+At the beginning of each new project, the assistant should always ask whether there is a particular brand hex code or defined palette to incorporate. You can provide exact code(s), ask it to derive a palette from supplied brand guidelines, or say that no color is locked.
+
 ### 4. Start the conversation
 
 Give the assistant your brief, topic, script, or shot list. Add reference images when useful and explain what each reference should control.
@@ -60,6 +64,8 @@ You do not need to know which questions to ask. At every important stage, the as
 ### 5. Approve the Direction Check
 
 Before prompts, the assistant will translate your goals into a proposed mood and visual treatment.
+
+The Direction Check should also explain how approved brand colors will appear and how populated or active the world should feel. Unless you intentionally request isolation, closure, exclusivity, or emptiness, locations should include believable background people and activity appropriate to the place and time.
 
 If your direction is vague, it should offer two or three options. You can:
 
@@ -109,7 +115,7 @@ The assistant should determine whether you mean a physical push-in, optical zoom
 
 ### 8. Authorize the static prompts
 
-After all relevant shot decisions are complete, the assistant must show you a **Prompt Readiness Summary**. This should consolidate the shot purpose, subject/action, composition, camera position and angle, lens behavior, production design, lighting, palette, depth of field, focus, start/end state, references, model strategy, and important risks.
+After all relevant shot decisions are complete, the assistant must show you a **Prompt Readiness Summary**. This should consolidate the shot purpose, subject/action, composition, camera position and angle, lens behavior, production design, lighting, palette and approved brand-color use, plausible occupancy and secondary background activity, depth of field, focus, start/end state, references, model strategy, and important risks.
 
 It will then ask whether you approve that specification and authorize static prompt drafting. The prompts must not appear in the same message as the authorization request.
 

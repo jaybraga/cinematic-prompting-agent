@@ -42,6 +42,9 @@ Copy this file, fill in what you know, and leave anything uncertain blank.
 - Anti-references or things to avoid:
 - Existing campaign style that must be matched:
 - Scenes or sections that should intentionally feel different:
+- Exact brand hex code(s), if any:
+- Should the brand color be a hero accent, a subtle recurring cue, or integrated another way?
+- Materials, skin tones, locations, products, or other areas that must retain their natural color:
 
 ## Subjects and continuity
 
@@ -50,6 +53,8 @@ Copy this file, fill in what you know, and leave anything uncertain blank.
 - Wardrobe:
 - Props:
 - Locations/environments:
+- Expected background people, staff, patrons, passersby, or other secondary activity:
+- Any shot that should intentionally feel empty, private, closed, isolated, or after-hours—and why:
 - Time of day/weather:
 - What must remain consistent across shots:
 - What changes during the story:

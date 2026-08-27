@@ -13,6 +13,12 @@ Use this framework to turn subjective direction into concrete production choices
 
 Do not substitute one layer for another. "Premium" is not a complete mood, and "ARRI with anamorphic lenses" is not a complete style.
 
+## Brand-color check
+
+At the beginning of every project, ask whether an exact brand hex code or defined palette should be incorporated. The user may supply codes, ask the agent to derive a palette from brand guidelines or references, or choose no locked brand color.
+
+When a code is approved, translate it into an integration plan: decide whether it acts as a hero accent, recurring environmental echo, wardrobe or prop cue, practical-light note, product/UI color, or controlled grade relationship. Protect believable skin tones, material response, motivated light, and the natural identity of the location. If exact colorimetry is mandatory, plan a finishing or compositing check rather than promising perfect hex reproduction from generation alone.
+
 ## Direction dimensions
 
 Define only the dimensions that materially shape the piece, but check all of them for contradictions:
@@ -21,8 +27,8 @@ Define only the dimensions that materially shape the piece, but check all of the
 2. **Audience relationship:** inviting, peer-to-peer, authoritative, exclusive, irreverent, warm, ceremonial, observational.
 3. **Realism level:** documentary, naturalistic commercial, heightened live action, stylized photorealism, graphic/illustrative, surreal.
 4. **Narrative energy:** calm, measured, buoyant, chaotic, propulsive, suspenseful, contemplative.
-5. **World and production design:** location character, scale, materials, cleanliness, density, props, wardrobe, graphic language.
-6. **Palette and light:** dominant hues, saturation, contrast, source motivation, softness, time of day, highlight/shadow character.
+5. **World and production design:** location character, scale, materials, cleanliness, plausible occupancy, background human activity, density, props, wardrobe, graphic language.
+6. **Palette and light:** approved brand hex codes and their assigned roles, dominant hues, saturation, contrast, source motivation, softness, time of day, highlight/shadow character.
 7. **Human performance:** candid, restrained, aspirational, comic, tactile, choreographed, spontaneous, intimate.
 8. **Composition and optics:** graphic versus observational framing, distance, perspective, depth, lens character, focus strategy, negative space.
 9. **Texture and finishing:** clean digital, tactile naturalism, filmic grain, diffusion, halation, sharpness, color treatment, controlled imperfections.
@@ -84,4 +90,3 @@ Store one approved base `style_id` for the piece. When a scene needs a different
 - how the piece returns to or evolves from the base system.
 
 This preserves authorship without forcing every shot into an identical mood.
-
