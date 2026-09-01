@@ -1,6 +1,6 @@
 # Per-Shot Direction Check Template
 
-Use this before writing the first static prompt for a shot.
+Use this before writing the first static prompt for a shot. Read `references/Model-and-Prompt-Strategy.md` and recommend a strategy rather than asking the user to choose without guidance.
 
 ## Shot context
 
@@ -13,11 +13,7 @@ Use this before writing the first static prompt for a shot.
 
 ## Direction path
 
-Choose one:
-
-- User describes the idea; agent translates and develops it.
-- Agent proposes two or three options.
-- Hybrid: user supplies part of the idea; agent completes or refines it.
+Choose one: user-described; agent proposes two or three options; or hybrid.
 
 ## Static viewpoint check
 
@@ -26,7 +22,7 @@ Choose one:
 - Lens/perspective behavior:
 - Subject placement:
 - Foreground/midground/background:
-- Background occupancy, human activity, and secondary environmental action:
+- Background occupancy and secondary action:
 - Approved reason for intentional emptiness, if applicable:
 - Depth of field and initial focus plane:
 - How this viewpoint expresses the mood and shot purpose:
@@ -37,15 +33,27 @@ Complete only for video shots.
 
 - Support/stability:
 - Start frame:
-- Three-dimensional path:
+- Three-dimensional path and orientation:
 - Pan/tilt/roll/orbit/tracking behavior:
 - Optical zoom:
 - Framing evolution/parallax:
-- Focus target A -> target B:
-- Focus cue, speed, landing, and hold:
+- Focus target A -> target B, cue, speed, landing, and hold:
 - Timing/easing:
 - End frame:
+- Endpoint compatibility: clear / blocked by:
 - Generation difficulty/risk:
+
+## Model & Prompt Strategy Card
+
+- Primary model/mode and why:
+- Fallback and pivot condition:
+- Prompt form and why: labeled natural prose / change-preserve-reference / object-by-object structured / master-plus-delta / concise motion
+- Reference plan: exact candidate -> one assigned job and priority:
+- Traits that must not transfer:
+- Iteration/cost plan:
+- Principal risks:
+- Live capability or credit check required:
+- Stop status: clear / blocked by which mandatory check:
 
 ## Agent recommendation
 
@@ -66,8 +74,8 @@ Complete only for video shots.
 
 ## Approval
 
-- Approved:
+- Approved direction and strategy:
 - Requested changes:
 - Date/version:
 
-Approval here confirms the direction but does not authorize copy-ready prompt drafting. Continue to `Prompt-Readiness-and-Authorization-Template.md`.
+Approval here confirms direction and model/prompt strategy but does not authorize copy-ready prompt drafting. Continue to `Prompt-Readiness-and-Authorization-Template.md`.

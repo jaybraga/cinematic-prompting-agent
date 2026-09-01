@@ -1,6 +1,6 @@
 # Prompt Readiness and Authorization Template
 
-Use this gate before copy-ready prompt drafting. Do not place generation prompts in the authorization request.
+Use this gate before copy-ready prompt drafting. Do not place generation prompts in the authorization request. Re-run every mandatory stop check in `references/Model-and-Prompt-Strategy.md`.
 
 ## Static Prompt Readiness Summary
 
@@ -11,41 +11,33 @@ Use this gate before copy-ready prompt drafting. Do not place generation prompts
 
 ### Approved shot specification
 
-- Purpose and emotional beat:
-- Subject and action:
-- Continuity state:
-- Shot size and composition:
-- Camera position, height, and angle:
-- Lens/perspective behavior:
-- Aspect ratio:
-- Foreground/midground/background and visual hierarchy:
-- Lived-in occupancy and secondary human/environmental activity, or approved empty-space exception:
+- Purpose, emotional beat, subject, action, and continuity:
+- Shot size, composition, camera position/height/angle, and lens behavior:
+- Aspect ratio and safe area:
+- Foreground/midground/background, occupancy, and visual hierarchy:
 - Production design, wardrobe, and props:
-- Lighting, palette, approved brand hex use, texture, and grade:
+- Lighting, palette, brand hex placement/material/prominence, texture, and grade:
 - Depth of field and focus:
-- Start state:
-- End state:
-- Separate end image required and why:
-- End prompt ready now, or deferred until which exact reference node exists:
-- Reference-image availability and use decision:
-- Selected references and assigned roles:
+- Start state, end state, and separate-end-image decision:
+- Video movement concept the endpoints must support:
+
+### Model, prompt, and reference strategy
+
+- Primary image model/mode and visible reason:
+- Fallback and pivot condition:
+- Prompt form and reason:
+- Selected references, assigned jobs, priorities, and non-transfer traits:
 - Exact Magnific node name and binding method for each selected reference:
-- Target image model/mode and output requirements:
-- Video movement concept the static frame must support:
+- Output requirements and cost/iteration plan:
 - Material risks:
-- Assumptions or recommended defaults:
-- Unresolved conflicts:
+- Mandatory stop checks: all clear / blocked by:
+- Assumptions, defaults, deferred items, or unresolved conflicts:
 
 ### Authorization request
 
-> Approve this specification and authorize static prompt drafting for [shot IDs or batch]?
+> Approve this specification and model/prompt strategy, and authorize static prompt drafting for [shot IDs or batch]?
 
-Options:
-
-- Approve and authorize the named scope.
-- Request changes to specific fields.
-- Authorize only selected ready shots.
-- Hold and revisit an earlier decision.
+Options: approve; request changes; choose the fallback; authorize a ready subset; or hold and revisit an earlier decision.
 
 - User response:
 - Authorized scope:
@@ -58,35 +50,34 @@ Options:
 - Shot IDs or batch:
 - Approved start image IDs:
 - Approved end image IDs:
-- Exact Magnific node names and binding methods for start/end/additional references:
+- Exact node names and binding methods:
 
 ### Approved motion specification
 
-- Support/stability:
-- Camera path:
-- Orientation and framing evolution:
-- Lens operation:
+- Support/stability and camera path:
+- Orientation, framing evolution, and lens operation:
 - Focus choreography:
-- Subject motion:
-- Environmental motion:
-- Duration, timing, and easing:
-- Settle and landing frame:
-- Target video model/mode:
-- Changes caused by the approved static images:
+- Subject and environmental motion:
+- Duration, timing, easing, settle, and landing:
+- Endpoint compatibility check:
+- Changes caused by approved static images:
+
+### Model and prompt strategy
+
+- Primary video model/mode and visible reason:
+- Fallback and pivot condition:
+- Prompt form and reason:
+- Reference jobs and dedicated start/end/additional slots:
+- Output requirements and known credit consequence or uncertainty:
 - Material risks:
-- Assumptions or recommended defaults:
-- Unresolved conflicts:
+- Mandatory stop checks: all clear / blocked by:
+- Assumptions, defaults, or unresolved conflicts:
 
 ### Authorization request
 
-> Approve this motion specification and authorize the final video prompt for [shot IDs or batch]?
+> Approve this motion specification and model/prompt strategy, and authorize the final video prompt for [shot IDs or batch]?
 
-Options:
-
-- Approve and authorize the named scope.
-- Request changes to the movement, focus, timing, or landing.
-- Authorize only selected ready shots.
-- Simplify the move or return to static-frame repair.
+Options: approve; request changes; choose the fallback; authorize a ready subset; simplify the move; or return to static repair.
 
 - User response:
 - Authorized scope:
