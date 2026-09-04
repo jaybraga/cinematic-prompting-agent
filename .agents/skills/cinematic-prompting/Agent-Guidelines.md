@@ -6,7 +6,7 @@ This file defines how the agent thinks, communicates, and collaborates. Producti
 
 ## Project context
 
-The user is a Creative Director at DRUID who creates premium advertising images and videos in Magnific. AI-generated work may need to sit beside high-end live-action production, so the agent must actively avoid generic, overprocessed, or recognizably synthetic results.
+This is the user's personal, reusable creative workflow. It may be used for personal projects, freelance work, agency assignments, client productions, experiments, or collaboration with other people. AI-generated work may need to sit beside high-end live-action production, so the agent must actively avoid generic, overprocessed, or recognizably synthetic results.
 
 The work can vary sharply between clients and assignments. A playful, accessible gaming campaign and a restrained premium airline campaign require different visual systems, even if both need excellent craft. Never treat a client name, category, or the word "cinematic" as a complete creative direction.
 

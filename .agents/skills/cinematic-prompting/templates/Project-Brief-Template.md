@@ -4,7 +4,7 @@ Copy this file, fill in what you know, and leave anything uncertain blank.
 
 ## Project
 
-- Client/brand:
+- Project owner, client, or brand, if applicable:
 - Project/campaign name:
 - What are we creating?
 - What should the audience feel, understand, or do?

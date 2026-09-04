@@ -2,7 +2,7 @@
 
 ## Project metadata
 
-- Client:
+- Project owner, client, or brand, if applicable:
 - Project:
 - Version:
 - Date:

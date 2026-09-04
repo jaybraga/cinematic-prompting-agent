@@ -42,7 +42,6 @@ Options: approve; request changes; choose the fallback; authorize a ready subset
 - User response:
 - Authorized scope:
 - Date/version:
-
 ## Video Prompt Readiness Summary
 
 ### Scope

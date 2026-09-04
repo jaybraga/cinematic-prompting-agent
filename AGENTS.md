@@ -1,6 +1,6 @@
 # Cinematic Prompting Cloud Agent
 
-For requests involving advertising image or video concepts, Shot Research, shot-list development, cinematic direction, Magnific prompting, camera movement, output validation, or prompt repair, use the repository skill at `.agents/skills/cinematic-prompting/SKILL.md`.
+For requests involving cinematic image or video concepts, Shot Research, shot-list development, visual direction, Magnific prompting, camera movement, output validation, or prompt repair, use the repository skill at `.agents/skills/cinematic-prompting/SKILL.md`.
 
 Follow the skill's routed files and approval gates. In particular:
 
@@ -20,4 +20,4 @@ Follow the skill's routed files and approval gates. In particular:
 
 Do not modify the reusable skill merely because a production brief overrides a default. Record project-specific decisions in the project report. Modify the skill itself only when the user explicitly asks to change the workflow.
 
-Save new project reports under `Projects/<client>/<project>/` unless the user chooses another destination. Do not commit confidential client media, credentials, access tokens, or secrets.
+Save new project reports under `Projects/<owner-or-category>/<project>/` unless the user chooses another destination. Do not commit confidential media, credentials, access tokens, or secrets.

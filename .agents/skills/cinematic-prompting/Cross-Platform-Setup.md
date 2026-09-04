@@ -12,7 +12,7 @@ The portable source of truth is:
 - `Agent-Guidelines.md` — professional stance and collaboration behavior;
 - `Cinematic-Prompting-Ruleset.md` — non-negotiable production rules;
 - `Workflow-Guidelines.md` — chronological process and deliverable structure;
-- `references/` — mood/style, Shot Research, camera movement, model-specific guidance, Magnific reference-node binding, and optional Magnific history validation.
+- `references/` — mood/style, Shot Research, camera movement, per-shot model/prompt strategy, model-specific guidance, Magnific reference-node binding, and optional Magnific history validation.
 
 The `agents/openai.yaml` file is optional OpenAI/Codex interface metadata. Other platforms can ignore it.
 
@@ -61,7 +61,7 @@ Official Claude Code skill documentation: <https://code.claude.com/docs/en/slash
 Claude Projects use project knowledge and project instructions rather than a local skills directory.
 
 1. Create or open a Claude Project.
-2. Upload `SKILL.md`, the three core Markdown files, and the six files under `references/` to Project Knowledge. Also upload `START-HERE.md`, `templates/`, and `examples/` when you want the beginner guide and reusable forms available inside the project.
+2. Upload `SKILL.md`, the three core Markdown files, and the seven files under `references/` to Project Knowledge. Also upload `START-HERE.md`, `templates/`, and `examples/` when you want the beginner guide and reusable forms available inside the project.
 3. Open `platforms/Claude-Project-Instructions.md` from this package.
 4. Copy its contents into **Set project instructions**.
 5. Start a new project chat and provide a topic, brief, references, script, or shot list.

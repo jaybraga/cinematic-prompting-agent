@@ -1,7 +1,7 @@
 interface:
   display_name: "Cinematic Prompting"
   short_description: "Direct still-first cinematic prompt packages"
-  default_prompt: "Use $cinematic-prompting to establish the visual direction, research and propose a shot list when needed, run each Per-Shot Direction Check, build a still-first shot package, and offer optional read-only Magnific history retrieval when generated results need validation."
+  default_prompt: "Use $cinematic-prompting to establish the visual direction, research and propose a shot list when needed, recommend a per-shot model and prompt strategy, run each Per-Shot Direction Check, build a still-first shot package, and offer optional read-only Magnific history retrieval when generated results need validation."
 
 policy:
   allow_implicit_invocation: true

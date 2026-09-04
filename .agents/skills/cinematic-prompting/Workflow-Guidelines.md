@@ -349,13 +349,13 @@ Save project reports in the user-specified project folder. Do not mix temporary 
 
 Use this grammar unless the user specifies another convention:
 
-`DRUID_YY_Client_Project-Name_Deliverable_Version.ext`
+`YYYY_Client-or-Project_Project-Name_Deliverable_Version.ext`
 
 Examples:
 
-- `DRUID_26_GOL_Insignia-Launch_Shot-Prompts_V01.md`
-- `DRUID_26_Client_Project-Name_SC03-SH02_Start-Frame_A.png`
-- `DRUID_26_Client_Project-Name_SC03-SH02_End-Frame_A.png`
-- `DRUID_26_Client_Project-Name_SC03-SH02_Video_V02.mp4`
+- `2026_Airline_Insignia-Launch_Shot-Prompts_V01.md`
+- `2026_Client_Project-Name_SC03-SH02_Start-Frame_A.png`
+- `2026_Client_Project-Name_SC03-SH02_End-Frame_A.png`
+- `2026_PersonalProject_Project-Name_SC03-SH02_Video_V02.mp4`
 
 Use underscores to separate naming sections and hyphens within a section. Use stable scene/shot IDs and alphabetic suffixes for creative variants.

@@ -8,12 +8,13 @@ This workflow helps you work with an AI assistant to plan and write high-quality
 
 It helps you:
 
-- turn a rough topic, advertising brief, script, or shot list into a clear visual direction;
+- turn a rough topic, creative brief, script, or shot list into a clear visual direction;
 - research relevant facts, culture, places, behaviors, and visual motifs when you do not yet know what to show;
 - turn that research into narrative-route options and a proposed shot list;
 - decide the mood and style before prompt writing;
 - ask whether exact brand hex colors or a supplied palette should be integrated, and define where they belong;
 - plan each shot's viewpoint, composition, camera movement, and focus;
+- recommend a primary model, fallback, prompt form, reference plan, and iteration/cost strategy for each shot;
 - decide whether available reference images should be used, ignored, or reviewed first, and bind selected Magnific references to their exact node names;
 - keep public, commercial, travel, hospitality, workplace, and social environments plausibly lived-in unless you intentionally approve an empty or private scenario;
 - create and approve static start images before generating video;
@@ -35,7 +36,7 @@ You need:
 - a topic, brief, script, shot list, or even just a rough idea;
 - any useful brand guidelines, references, product images, character images, or existing campaign materials.
 
-Do not upload confidential client material to an AI service unless your company and client policies allow it. Confirm account privacy, data retention, and usage-right requirements first.
+Do not upload confidential or restricted material to an AI service unless the applicable owner, collaborator, employer, or client policies allow it. Confirm account privacy, data retention, and usage-right requirements first.
 
 ## The easiest way to start
 
@@ -202,6 +203,7 @@ cinematic-prompting/
 │   ├── Mood-and-Style-Framework.md
 │   ├── Shot-Research-and-Shotlist-Design.md
 │   ├── Camera-Movement-Language.md
+│   ├── Model-and-Prompt-Strategy.md
 │   ├── Model-Adapters.md
 │   ├── Magnific-Reference-Node-Bindings.md
 │   └── Magnific-MCP-Validation.md

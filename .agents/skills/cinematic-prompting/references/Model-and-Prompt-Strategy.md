@@ -168,3 +168,4 @@ Then:
 5. After two materially similar failures, or as soon as the prompt becomes contradictory, stop stacking instructions. Rebuild concisely from the canonical specification, repair/create a better reference, change the model, split the shot, or move an exact element to post.
 
 When exploring alternatives, distinguish a controlled variant from a repair. A variant may change approved creative variables; a repair should not.
+

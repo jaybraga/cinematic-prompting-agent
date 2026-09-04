@@ -4,7 +4,7 @@ Use this when the brief does not already contain enough visual ideas.
 
 ## Research mandate
 
-- Project/client:
+- Project and owner/client/brand, if applicable:
 - Communication objective:
 - Audience:
 - Central message or promise:
